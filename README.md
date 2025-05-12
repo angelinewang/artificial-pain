@@ -23,7 +23,7 @@ os.environ['WANDB_API_KEY']= ''
 ```
 
 
-### **Classification-only** model is in the 'classification' folder---functional for both SAD and ESConv datasets. 
+### **Classification-only** model is in the 'classification' folder: functional for both SAD and ESConv datasets 
 
 First script in each folder is for loading data, and second script in each folder is for training and evaluating the model. 
 
@@ -31,7 +31,7 @@ First script in each folder is for loading data, and second script in each folde
 ```
 python classification-dataloader.py --model_name answerdotai/ModernBERT-base --dataset_name ESConv --balanced --samples_per_label 1500
 ```
-Flag options:
+**Flag options**:
 
 '--model_name': default="mental/mental-roberta-base", choices=["mental/mental-roberta-base", "mental/mental-bert-base-uncased", "answerdotai/ModernBERT-base"],
 
@@ -50,7 +50,7 @@ This sets the number of samples per label when balancing.
 ```
 python classification-model.py --model_name mental/mental-bert-base-uncased --dataset_name ESConv --balanced
 ```
-Flag options:
+**Flag options**:
 
 '--model_name': default="mental/mental-roberta-base", choices=["mental/mental-roberta-base", "mental/mental-bert-base-uncased", "answerdotai/ModernBERT-base"]
 
@@ -65,7 +65,7 @@ Run with '--debug' if you want to enable debug mode, which only trains the model
 Run with '--balanced' to use the created balanced dataset for training and evaluation. 
 
 
-### **Multi-task model** is in the 'intensity' folder---only functional for the ESConv dataset. 
+### **Multi-task model** is in the 'intensity' folder: only functional for the ESConv dataset
 
 First script in each folder is for loading data, and second script in each folder is for training and evaluating the model. 
 
@@ -73,7 +73,7 @@ First script in each folder is for loading data, and second script in each folde
 ```
 python intensity-dataloader.py --model_name mental/mental-roberta-base --dataset_name ESConv
 ```
-Flag options:
+**Flag options**:
 
 '--model_name': default="mental/mental-roberta-base", choices=["mental/mental-roberta-base", "mental/mental-bert-base-uncased", "answerdotai/ModernBERT-base"]
 
@@ -94,7 +94,7 @@ This sets the number of samples per label when balancing.
 ```
 python intensity-model.py --model_name answerdotai/ModernBERT-base --dataset_name ESConv --head_num 4 --model_metric accuracy
 ```
-Flag options:
+**Flag options**:
 
 '--model_name': default="mental/mental-roberta-base", choices=["mental/mental-roberta-base", "mental/mental-bert-base-uncased", "answerdotai/ModernBERT-base"]
 
