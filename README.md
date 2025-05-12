@@ -67,8 +67,6 @@ Run with '--balanced' to use the created balanced dataset for training and evalu
 
 ### **Multi-task model** is in the 'intensity' folder: only functional for the ESConv dataset
 
-First script in each folder is for loading data, and second script in each folder is for training and evaluating the model. 
-
 #### 1. Run intensity-dataloader.py with HuggingFace Token and relevant flags
 ```
 python intensity-dataloader.py --model_name mental/mental-roberta-base --dataset_name ESConv
