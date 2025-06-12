@@ -93,7 +93,7 @@ def calculate_weighted_metrics(y_true, y_pred):
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Calculate baseline metrics for emotion classification and intensity prediction')
-    parser.add_argument('--num_tasks', type=str, choices=['single-task', 'multi-task'], default='single-task',
+    parser.add_argument('--num_tasks', type=str, choices=['single-task', 'multi-task'], default='multi-task',
                       help='Whether to run single-task (classification only) or multi-task (classification and intensity)')
     parser.add_argument('--dataset', type=str, choices=['SAD', 'ESConv'], default='ESConv',
                       help='Which dataset to use')
