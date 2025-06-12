@@ -23,6 +23,14 @@ os.environ['WANDB_API_KEY']= ''
 ```
 
 
+### Baseline
+Run baseline.py from the root of the repository with **flags** to indicate the dataset and the number of tasks:
+
+'--dataset': default="ESConv", choices=["SAD", "ESConv"],
+
+'--num_tasks': default="multi-task", choices=["single-task", "multi-task"]
+
+
 ### **Classification-only** model is in the 'classification' folder: functional for both SAD and ESConv datasets 
 
 First script in each folder is for loading data, and second script in each folder is for training and evaluating the model. 
